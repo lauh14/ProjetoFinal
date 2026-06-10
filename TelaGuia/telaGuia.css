@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #0f4c81;
+    color: white;
+    padding: 2.5rem 0;
+    text-align: center;
+    border-bottom: 4px solid #1f7a8c;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+
+main {
+    padding: 2rem 0;
+}
+
+h2 {
+    color: #0f4c81;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.aviso-importante {
+    background-color: #fff3cd;
+    border-left: 5px solid #ffc107;
+    color: #856404;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+}
+
+
+.grid-medicamentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card-medicamento {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    border: 1px solid #e1e8ed;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-medicamento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #1f7a8c;
+    color: white;
+    padding: 1.25rem;
+}
+
+.card-header h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+}
+
+.categoria {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-body p {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.card-body p:last-child {
+    margin-bottom: 0;
+}
+
+.card-body strong {
+    color: #0f4c81;
+}
+
+
+footer {
+    background-color: #1c2541;
+    color: #a5a9b4;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
