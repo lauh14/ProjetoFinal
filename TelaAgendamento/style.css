@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #062f63 0%,
+        #0b4d91 35%,
+        #1f82d1 70%,
+        #40b0fd 100%
+    );
+    padding: 30px;
+}
+
+.container{
+    width: 100%;
+    max-width: 850px;
+}
+
+header{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p{
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+.agendamento-card{
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.agendamento-card h2{
+    text-align: center;
+    color: #062f63;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo label{
+    color: #062f63;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.campo input,
+.campo select,
+.campo textarea{
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #dbeafe;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: 0.3s;
+    outline: none;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus{
+    border-color: #40b0fd;
+    box-shadow: 0 0 10px rgba(64, 176, 253, 0.3);
+}
+
+.campo textarea{
+    resize: none;
+    min-height: 120px;
+}
+
+.linha{
+    display: flex;
+    gap: 15px;
+}
+
+.linha .campo{
+    flex: 1;
+}
+
+.maps-link{
+    text-decoration: none;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #062f63,
+        #40b0fd
+    );
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.maps-link:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(64, 176, 253, 0.4);
+}
+
+button{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(
+        135deg,
+        #062f63,
+        #40b0fd
+    );
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(64, 176, 253, 0.4);
+}
+
+button:active{
+    transform: scale(0.98);
+}
+
+::placeholder{
+    color: #94a3b8;
+}
+
+@media (max-width: 768px){
+
+    body{
+        padding: 15px;
+    }
+
+    .agendamento-card{
+        padding: 25px;
+    }
+
+    .linha{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    header h1{
+        font-size: 2.7rem;
+    }
+
+    .agendamento-card h2{
+        font-size: 1.6rem;
+    }
+}

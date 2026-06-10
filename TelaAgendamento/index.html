@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitally - Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Vitally</h1>
+            <p>Agende sua consulta de forma rápida e segura</p>
+        </header>
+
+        <section class="agendamento-card">
+
+            <h2>Agendar Consulta</h2>
+
+            <form id="formAgendamento">
+
+                <div class="campo">
+                    <label>Nome Completo</label>
+                    <input type="text" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="linha">
+
+                    <div class="campo">
+                        <label>Idade</label>
+                        <input type="number" placeholder="Idade" required>
+                    </div>
+
+                    <div class="campo">
+                        <label>RG</label>
+                        <input type="text" placeholder="Digite seu RG" required>
+                    </div>
+
+                </div>
+
+                <div class="linha">
+
+                    <div class="campo">
+                        <label>CPF</label>
+                        <input type="text" placeholder="Digite seu CPF" required>
+                    </div>
+
+                    <div class="campo">
+                        <label>CEP</label>
+                        <input type="text" placeholder="Digite seu CEP" required>
+                    </div>
+
+                </div>
+
+                <div class="campo">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="campo">
+                    <label>Você está à procura por:</label>
+
+                    <select required>
+                        <option value="">Selecione uma especialidade</option>
+                        <option>Cardiologia</option>
+                        <option>Dermatologia</option>
+                        <option>Pediatria</option>
+                        <option>Ortopedia</option>
+                        <option>Neurologia</option>
+                        <option>Oftalmologia</option>
+                        <option>Ginecologia</option>
+                        <option>Clínico Geral</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Encontre o Hospital mais próximo de você:</label>
+
+                    <a href="https://www.google.com/maps/search/hospitais+próximos/"
+                       target="_blank"
+                       class="maps-link">
+                        📍 Abrir Google Maps
+                    </a>
+                </div>
+
+                <div class="linha">
+
+                    <div class="campo">
+                        <label>Data Preferencial</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="campo">
+                        <label>Horário Preferencial</label>
+                        <input type="time" required>
+                    </div>
+
+                </div>
+
+                <div class="campo">
+                    <label>Observações</label>
+                    <textarea placeholder="Digite alguma informação importante para sua consulta..."></textarea>
+                </div>
+
+                <button type="submit">
+                    Confirmar Agendamento
+                </button>
+
+            </form>
+
+        </section>
+
+    </div>
+
+    <script>
+        document.getElementById("formAgendamento").addEventListener("submit", function(event){
+
+            event.preventDefault();
+
+            alert(
+                "Agendamento realizado com sucesso!\n\n" +
+                "Em breve entraremos em contato com a data e o horário da sua consulta com o Doutor Teste."
+            );
+
+            this.reset();
+
+        });
+    </script>
+
+</body>
+</html>
